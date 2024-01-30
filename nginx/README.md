@@ -1,8 +1,24 @@
 # nginx tricks
 
-## 1. Tricks cơ bản
+1. [Tricks cơ bản](#nbtricks)
 
-### 1.1 badmethod
+    1.1. [block badmethod](#block-badmethod)
+
+    1.2. [block useragent](#block-useragent)
+
+    1.3. [block client use proxy](#block-proxy)
+
+    1.4. [block referrer](#block-referrer)
+
+    1.5. [block random uri](#block-random-uri)
+
+    1.5.1. [Dạng cơ bản đánh random vào trang index](#r-index)
+
+    1.5.2. [Random vào link nhất định](#r-link-define)
+
+## 1. Tricks cơ bản <a name="nbtricks"></a>
+
+### 1.1 block badmethod <a name="block-badmethod"></a>
 
 ``` bassh
 map $request_method $badmethod {
@@ -17,7 +33,7 @@ server {
 }
 ```
 
-### 1.2 block useragent
+### 1.2 block useragent <a name="block-useragent"></a>
 
 ```bash
 server {
@@ -26,7 +42,7 @@ server {
 if ($http_user_agent ~* (user_agent1|agent2)) { return 444; }
 ```
 
-### 1.3 block client use proxy
+### 1.3 block client use proxy <a name="block-proxy"></a>
 
 ```bash
 if ( $http_x_proxy_id ) { return 444; }
@@ -34,15 +50,15 @@ if ( $http_x_forwarded_for ) { return 444; }
 if ( $http_via ) { return 444; }
 ```
 
-### 1.3 block referrer
+### 1.4 block referrer <a name="block-referrer"></a>
 
 ```bash
 if ($http_referer ~* ()) { return 444; }
 ```
 
-### 1.4 block random uri
+### 1.5 block random uri <a name="block-random-uri"></a>
 
-#### 1.4.1 Dạng cơ bản đánh random vào trang index
+#### 1.5.1 Dạng cơ bản đánh random vào trang index <a name="r-index"></a>
 
 ```bash
 #Random uri: 
@@ -51,7 +67,7 @@ if ($http_referer ~* ()) { return 444; }
    if ($request  ~* (/\?) ) { return 444;  }
 ```
 
-#### 1.4.2 Dạng cơ bản đánh random vào trang nhất định
+#### 1.5.2 Random vào link nhất định <a name="r-link-define"></a>
 
 * Ví dụ, chỉ cho phép những kết nối dạng này truy cập:
 
