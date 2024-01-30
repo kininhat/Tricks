@@ -22,4 +22,16 @@
 
 [README.md](./windows/README.md)
 
+### 6. OS Linux
+
+[README.md](./linux/README.md)
+
+### 7. mysql
+
+[README.md](./mysql/README.md)
+
+### 8. sql server
+
+[README.md](./sql/README.md)
+
 ## II. Tricks for ...
