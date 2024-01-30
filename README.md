@@ -8,18 +8,18 @@
 
 ### 2. Proxmox
 
-[README.md](./cpanel/proxmox.md)
+[README.md](./proxmox/README.md)
 
 ### 3. Nginx
 
-[README.md](./cpanel/nginx.md)
+[README.md](./nginx/README.md)
 
 ### 4. iptables
 
-[README.md](./cpanel/iptables.md)
+[README.md](./iptables/README.md)
 
 ### 5. OS Window
 
-[README.md](./cpanel/windows.md)
+[README.md](./windows/README.md)
 
 ## II. Tricks for ...
