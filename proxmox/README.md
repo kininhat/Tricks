@@ -2,9 +2,10 @@
 
 ## 1. Bật ảo hóa cho virtual machine
 
-* Tại file: /etc/pve/qemu-server/id.conf, sau dòng: agent: 1 điều chỉnh
+* Tại file: **/etc/pve/qemu-server/id.conf**, sau dòng: **agent: 1 điều chỉnh thêm args** sau
 
 * Tùy theo dòng cpu mà sẽ có điều chỉnh tương ứng, thường gặp:
+
   * Basic:
 
     ```bash
