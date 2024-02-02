@@ -19,7 +19,7 @@ GRANT ALL PRIVILEGES ON *.* TO 'username'@'localhost' IDENTIFIED BY 'mypass';
 ```bash
 CREATE USER 'root'@'%' IDENTIFIED BY 'root_password';
 GRANT ALL PRIVILEGES ON *.* TO 'ub'@'%';
-ALTER USER 'ub'@'%' IDENTIFIED WITH caching_sha2_password  BY 'root_password';
+ALTER USER 'root'@'%' IDENTIFIED WITH caching_sha2_password  BY 'root_password';
 FLUSH PRIVILEGES;
 ```
 
