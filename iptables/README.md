@@ -4,21 +4,21 @@ I. [Lấy bytescode](#get-bytescode)
 
 II. [1 số rules thông dụng](#common-rules)
 
-    1. [Cpanel](#cpanel)
+1. [Cpanel](#cpanel)
 
-        1.1. [syn && ip[1]>0 & ip[2:2]>=60 & cpanel - chặn nhầm qua cloudflare nhưng rất ít](#rules1)
+    1.1. [syn && ip[1]>0 & ip[2:2]>=60 & cpanel - chặn nhầm qua cloudflare nhưng rất ít](#rules1)
 
-        1.2. [syn && ip[1]=0 & ip[2:2]>=60 & cpanel -> rules này có khả năng chặn nhầm 1 ít website](#rules2)
+    1.2. [syn && ip[1]=0 & ip[2:2]>=60 & cpanel -> rules này có khả năng chặn nhầm 1 ít website](#rules2)
 
-        1.3. [syn && ip[1]=0 & ip[2:2]=60 & cpanel](#rules3)
+    1.3. [syn && ip[1]=0 & ip[2:2]=60 & cpanel](#rules3)
 
-    2. [webserver port 80](#wsp80)
+2. [webserver port 80](#wsp80)
 
-        2.1 [get /?](#ws-get)
+    2.1 [get /?](#ws-get)
 
-        2.2 [head /?](#ws-head)
+    2.2 [head /?](#ws-head)
 
-        2.3 [post /?](#ws-post)
+    2.3 [post /?](#ws-post)
 
 ## I. Lấy bytescode <a name="get-bytescode"></a>
 
